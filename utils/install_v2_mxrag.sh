@@ -393,8 +393,8 @@ install() {
 
 get_wasmedge_release() {
 	info "Fetching WasmEdge-$VERSION"
-	# _downloader "https://github.com/WasmEdge/WasmEdge/releases/download/$VERSION/WasmEdge-$VERSION-$RELEASE_PKG"
-	_downloader "https://raw.githubusercontent.com/CIICLabs/WASI-NN-GGML-PLUGIN-REGISTRY/main/${VERSION}/WasmEdge-$VERSION-$RELEASE_PKG"
+	_downloader "https://github.com/WasmEdge/WasmEdge/releases/download/$VERSION/WasmEdge-$VERSION-$RELEASE_PKG"
+	# _downloader "https://raw.githubusercontent.com/CIICLabs/WASI-NN-GGML-PLUGIN-REGISTRY/main/${VERSION}/WasmEdge-$VERSION-$RELEASE_PKG"
 	_extractor -C "${TMP_DIR}" -vxzf "$TMP_DIR/WasmEdge-$VERSION-$RELEASE_PKG"
 }
 
